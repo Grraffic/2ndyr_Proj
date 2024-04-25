@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-color: rgb(40, 39, 39);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.main-container {
+  width: 90%;
+  height: 90%;
+  background: linear-gradient(#01eeff, #002aff);
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+#clickedImage {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title {
+  color: #fff;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  position: relative;
+  left: 3px;
+  margin-top: -5px;
+}
+
+#backButton {
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(#01eeff, #002aff);
+  transition: all 0.3 ease;
+  border-radius: 25px;
+  height: 100%;
+  width: 50%;
+}
+
+#backButton button[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+@media only screen and (min-width: 1240px) {
+  .main-container {
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  img {
+    max-width: 50%;
+  }
+
+  #backButton {
+    width: 20%;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    width: 90%;
+    height: 100%;
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  #backButton {
+    width: 30%;
+    height: 50%;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-container {
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .title {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  img {
+    max-width: 90%;
+    border-radius: 5px;
+  }
+
+  #backButton {
+    width: 50%;
+    height: 50%;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
